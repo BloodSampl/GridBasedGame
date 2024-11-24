@@ -9,9 +9,11 @@ public class PlayerController : MonoBehaviour
     public float speed = 5;
     private Transform player;
     private bool isMoving;
+    private LayerMask obstacleMask;
 
     private void Start()
     {
+        obstacleMask = LayerMask.GetMask("Wall","Enemy");
         player = GetComponentInChildren<SpriteRenderer>().transform;
     }
 
@@ -32,10 +34,14 @@ public class PlayerController : MonoBehaviour
                 var targetPos = transform.position;
                 targetPos.x += dir.x;
                 targetPos.y += dir.y;
-                StartCoroutine(Move(targetPos));
+                Collider2D hit = Physics2D.OverlapBox(targetPos, Vector2.one * .8f,0, obstacleMask);
+
+                if (!hit)
+                {
+                    StartCoroutine(Move(targetPos));
+                }
             }
         }
-       
         if (dir.x != 0)
         {
             dir = new Vector2(dir.x, 0);
@@ -44,8 +50,6 @@ public class PlayerController : MonoBehaviour
         {
             dir = Vector2.zero;
         }
-
-       
         FlipPlayer();
     }
 
