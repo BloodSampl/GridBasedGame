@@ -132,6 +132,56 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5953639734372756971, guid: 7c6c397c2e3ac904dbc153ea388f3560, type: 3}
   m_PrefabInstance: {fileID: 586826553}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &67732357 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3694710583653482313, guid: 3a53bd3d76c2be346830f1aa2054a88d, type: 3}
+  m_PrefabInstance: {fileID: 2210427622310758014}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &67732360
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67732357}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.8, y: 0.8}
+  m_EdgeRadius: 0
 --- !u!1001 &114316731
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -353,10 +403,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f15544f070079394e99fb25f04bc158f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randomItems:
+  - {fileID: 2977379366207485660, guid: 46ebfc3ec3febed45a209ab740691c2f, type: 3}
+  - {fileID: 8198084812580411779, guid: 46e8e28cad2b4c54b9f5474829f5342e, type: 3}
+  - {fileID: 7890762054298734651, guid: 949380dcf14511d4abbbe8a6e7d6acd2, type: 3}
+  - {fileID: 720392382495943243, guid: 979d69e0449ea4244bb8a1b089d785b3, type: 3}
+  - {fileID: 2185794578249176499, guid: 17df858de6579684da1ef1dbd5970b05, type: 3}
   wallPrefab: {fileID: 8112173228921985216, guid: 7c6c397c2e3ac904dbc153ea388f3560, type: 3}
   floorPrefab: {fileID: 7799330732577782461, guid: 03d2a7c9574ddb74bb17dd2c8e659e15, type: 3}
   TilePrefab: {fileID: 7224048824329367669, guid: 3b7fdf1acff567643bb27f9d2c66f26d, type: 3}
-  totalFloorCount: 500
+  ExitPrefab: {fileID: 3389064660390730827, guid: 754d0c38117533242ac8c77d1f2cb51a, type: 3}
+  totalFloorCount: 1108
+  itemSpawnPercentage: 24
   minX: 0
   maxX: 0
   minY: 0
@@ -3183,7 +3241,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3694710583653482313, guid: 3a53bd3d76c2be346830f1aa2054a88d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 67732360}
   m_SourcePrefab: {fileID: 100100000, guid: 3a53bd3d76c2be346830f1aa2054a88d, type: 3}
 --- !u!1001 &4350390546001543499
 PrefabInstance:

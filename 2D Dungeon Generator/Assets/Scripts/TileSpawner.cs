@@ -53,9 +53,9 @@ public class TileSpawner : MonoBehaviour
         Destroy(this.gameObject);
     }
 
-    void OnDrawGizmos()
+    /*void OnDrawGizmos()
     {
         Gizmos.color = Color.white;
         Gizmos.DrawCube(transform.position, Vector3.one);
-    }
+    }*/
 }
