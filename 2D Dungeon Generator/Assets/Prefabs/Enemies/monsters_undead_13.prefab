@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3625210684058587647}
   - component: {fileID: 566356795011348916}
   - component: {fileID: 6228284297074843658}
+  - component: {fileID: -6275619309601839178}
   m_Layer: 7
   m_Name: monsters_undead_13
   m_TagString: Untagged
@@ -130,3 +131,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8, y: 0.8}
   m_EdgeRadius: 0
+--- !u!114 &-6275619309601839178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2853732025629268335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3a405b8f7e88c1469881411cd3ffa9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
